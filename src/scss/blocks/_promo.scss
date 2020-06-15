@@ -1,0 +1,50 @@
+.promo {
+    position: relative;
+    min-height: 800px;
+    &__descr {
+        font-family: 'ClearSans';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 27px;
+        color: #D9FEDD;
+        width: 325px;
+    }
+    &__wrapper {
+        height:100vh;
+        display:flex;
+    }
+    &__sidebar {
+        width: 150px;
+        position: fixed;
+        left: 5%;
+        padding-top: 300px;
+        z-index: 1;
+    }
+    &__main {
+        background: url(../img/bg/wrapper.png) center center no-repeat;
+        background-size: 100%;
+        flex: 1 1 auto;
+        overflow: auto;
+        min-height: 800px;
+        // max-width: 1440px;
+        padding-left: 340px;
+        padding-top: 140px;
+    }
+    &__vector {
+        img {
+            margin-top: 193px;
+        }
+    }
+    &__scroll {
+        margin-top: 176px;
+        writing-mode: sideways-lr;
+        transform: translateX(-25%);
+        color: #B2B2B2;
+    }
+    a {
+        &__social {
+            width: 18px;
+            height: 17px;
+        }
+    }
+}

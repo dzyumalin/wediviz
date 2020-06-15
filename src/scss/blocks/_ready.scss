@@ -1,0 +1,27 @@
+.ready {
+    position: relative;
+    padding: 135px 0 134px 0;
+    min-height: 515px;
+    background-color: #3D463E;
+    &__descr {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        margin-top: 32px;
+        font-family: 'ClearSans';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        color: #D2D5D2;
+        width: 558px;
+    }
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        opacity: .99;   
+    }
+}

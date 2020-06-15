@@ -1,0 +1,51 @@
+.button {
+    position: relative;
+    width: 206px;
+    height: 50px;
+    padding: 0;
+    border-radius: 4px;
+    border: none;
+    font-family: 'ClearSans';
+    &_header {
+        position: relative;
+        font-weight: 500;
+        background: #F8F8F9;
+        color: #3D413C;
+        &:before {
+            position: absolute;
+            content: '';
+            background: url(../icons/ellipse.svg) no-repeat;
+            width: 18px;
+            height: 18px;
+            bottom: 14px;
+            left: 14px;
+        }
+    }
+    &_promo {
+        margin-top: 101px;
+        width: 168px;
+        height: 48px;
+        background: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        color: #3D413C;
+    }
+    &_ready {
+        font-weight: 500;
+        display: block;
+        margin: 0 auto;
+        margin-top: 62px;
+        background: linear-gradient(29.97deg, #4AAE55 32.5%, #8FD200 92.85%);
+        color: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(143, 210, 0, 0.6);
+    }
+    &_popup {
+        font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+        color: #FFFFFF;
+        background: linear-gradient(29.01deg, #4AAE55 32.5%, #8FD200 92.85%);
+    }
+}

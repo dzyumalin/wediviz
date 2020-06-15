@@ -1,0 +1,18 @@
+.about {
+    position: relative;
+    padding: 78px 0 78px 245px;
+    margin-right: 147px;
+    min-height: 687px;
+    min-width: 1000px;
+    background: url(../img/bg/about.png) center center no-repeat;
+    background-size: 100%;
+    &__descr {
+        font-family: 'ClearSans';
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 30px;
+        color: #D9FEDD;
+        width: 392px;
+        margin-top: 48px;
+    }
+}

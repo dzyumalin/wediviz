@@ -1,0 +1,317 @@
+@media (max-width: 768px) {
+    .header {
+        padding: 25px 0 25px 0;
+        margin-left: 27px;
+        &__menu {
+            display: none;
+        }
+        &__logo {
+            width: 150px;
+        }
+    }
+    .promo {
+        min-height: 566px;
+        &__sidebar {
+            display: none;
+        }
+        &__wrapper {
+            height: 0;
+        }
+        &__main {
+            padding: 47px 0 99px 27px;
+            background: url(../img/bg/main.png) no-repeat;
+            min-height: 466px;
+        }
+        &__descr {
+            margin-top: 32px;
+            width: 358px;
+            height: 97px;
+        }
+    }
+
+    .title {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 0;
+    }
+    .button {
+        &_promo {
+            margin-top: 64px;
+        }
+        &_header {
+            margin-left: 284px;
+        }
+    }   
+    .target {
+        padding: 129px 0 58px 0;
+        &__block {
+            margin-top: 73px;
+            width: 262px;
+            height: 263px;
+            left: -10%;
+        }
+        &__subheader {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__learn {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &__descr {
+            width: 203px;
+            margin: 18px 0 32px 0;
+        }
+        &__items {
+            align-items: baseline;
+        }
+    }
+    .about {
+        height: 430px;
+        width: 741px;
+        min-width: 0;
+        min-height: 0;
+        padding: 56px 0 56px 27px;
+        background-size: 110%;
+        margin-right: 0;
+        &__descr {
+            margin-top: 24px;
+            font-size: 16px;
+            line-height: 23px;
+            .none {
+                display: none;
+            }
+        }
+    }
+    .subtitle {
+        &_about {
+            &:after {
+                left: 20%;
+            }
+        }
+    }
+    .wow {
+        padding: 56px 27px 56px 27px;
+    }
+    .ready {
+        min-height: 358px;
+        padding: 37px 0;
+        img {
+            width: 283px;
+            height: 283px;
+        }
+    }
+
+    // hambuger menu
+
+    .header-hamburger {
+        display: block;
+        font-size: 0;
+        background: none;
+        border: none;
+        width: 24px;
+        height: 20px;
+        position: relative;
+        border-top: 3px solid #009C5A;
+        left: 73%;
+        cursor: pointer;
+        &:before, &:after {
+            border-top: 3px solid #009C5A;
+            transition: all .3s;
+        }
+        &:before {
+            top: 4px;
+        }
+        &:after {
+            top: 11px;
+        }
+        &_opened {
+            border-top-color: transparent;
+            &:after {
+                transform: rotate(45deg);
+                top: 8px;
+            }
+            &:before {
+                transform: rotate(-45deg);
+                top: 8px;
+            }
+        }
+    }
+    .header-hamburger:before, .header-hamburger:after {
+        position: absolute;
+        content: "";
+        display: block;
+        left: 0;
+        right: 0;
+    }
+
+    .header__menu {
+        padding-top: 20px;
+        &_closed {
+          display: none;
+        }
+        &_opened {
+          display: block;
+          padding: 0;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        li {
+          margin-bottom: 10px;
+        }
+        a {
+          display: block;
+          padding: 10px 0;
+          color: #fff;
+          text-decoration: none;
+          text-align: center;
+          font-family: sans-serif, arial;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        flex-wrap: wrap;
+        padding: 25px 15px 25px 15px;
+        margin-left: 0;
+        min-height: 143px;
+        &__logo {
+            width: 123px;
+            height: 21px;
+        }
+    }
+    .button {
+        &_header {
+            width: 100%;
+            margin-top: 17px;
+            margin-left: 0;
+            &:before {
+                bottom: 15px;
+                left: 58px;
+            }
+        }
+        &_ready {
+            margin-top: 32px;
+            width: 200px;
+            height: 48px;
+        }
+        &_popup {
+            width: 100%;
+        }
+    }
+    .title {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .promo {
+        min-height: 608px;
+        &__main {
+            padding: 39px 15px 30px 15px;
+        }
+        &__descr {
+            width: 100%;
+            font-size: 15px;
+        }
+    }
+    .target {
+        &__items {
+            padding: 0 15px 0 15px;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        &__item {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin-right: 0;
+            align-items: safe;
+        }
+        &__block {
+            margin-top: 2px;
+        }
+        &__text {
+            margin-top: 8px;
+        }
+        &__descr {
+            width: 100%;
+        }
+        &__icon {
+            width: 100%;
+        }
+    }
+    .about {
+        padding: 0 15px;
+        background: linear-gradient(51.64deg, #4AAE55 52.38%, rgba(143, 210, 0, 0.9) 100%);
+        min-height: 500px;
+        width: 100%;
+        &__descr {
+            width: 100%;
+        }
+    }
+    .subtitle {
+        &_about {
+            padding-top: 32px;
+            font-size: 24px;
+            line-height: 29px;
+            &:after {
+                top: 70%;
+                left: 40%;
+            }
+        }
+        &_ready {
+            font-size: 24px;
+            line-height: 37px;
+        }
+    }
+    .wow {
+        min-height: 408px;
+        &__descr {
+            width: 187px;
+        }
+        &__items {
+            flex-wrap: wrap;
+        }
+    }
+    .ready {
+        &__descr {
+            width: 85%;
+        }
+    }
+
+    .popup {
+        padding: 24px 20px;
+        width: 90%;
+        height: 677px;
+        &__header {
+            font-size: 17px;
+            line-height: 10px;
+            margin-bottom: 18px;
+        }
+        &__close {
+            top: -10px;
+            right: 10px;
+            font-size: 30px;
+        }
+    }
+
+    .popup-input {
+        &__item {
+            input {
+                width: 245px;
+                margin-top: 7px;
+                margin-bottom: 10px;
+            }
+        }
+        &__checkbox {
+            margin-top: 16px;
+            margin-bottom: 30px;
+        }
+        label {
+            margin-bottom: 0;
+        }
+    }
+}

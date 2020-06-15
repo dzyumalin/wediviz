@@ -1,0 +1,18 @@
+.wow {
+    padding: 124px 0;
+    &__items {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item {
+        width: 264px;
+    }
+    &__descr {
+        margin-top: 32px;
+        font-family: 'ClearSans';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 23px;
+        color: #3D413C;
+    }
+}
