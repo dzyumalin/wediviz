@@ -42,14 +42,10 @@ gulp.task('html', function()    {
 });
 
 gulp.task('minjs', function()   {
-    return gulp.src("src/**/*.js")
-        // .pipe(rename({suffix: ".min"}))
-        // .pipe(uglify())
-        // .pipe(gulp.dest("dist/js"));
-        .pipe(babel({
-            presets: ["env"]
-        }))
-        .pipe(uglify())
+    return gulp.src("src/js/*.js") //src/**/*.js
+        .pipe(rename({suffix: ".min"}))
+        .pipe(babel())
+        .pipe(gulp.dest("dist/js/"));
 });
 
 gulp.task('fonts', function() {
