@@ -1,6 +1,18 @@
 .target {
     position: relative;
     padding: 132px 0 124px 0;
+}
+
+.target-items {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0 171px 0 187px;
+}
+
+.target-item {
+    position: relative;
+    margin-right: 20px;
     &__block {
         position: absolute;
         width: 362px;
@@ -8,16 +20,6 @@
         left: 0px;
         top: -1px;
         background: #F8F8F9;
-    }
-    &__items {
-        display: flex;
-        justify-content: space-around;
-        margin: 0 auto;
-        padding: 0 171px 0 187px;
-    }
-    &__item {
-        position: relative;
-        margin-right: 20px;
     }
     &__text {
         margin-top: 32px;
@@ -44,6 +46,7 @@
         text-transform: uppercase;
         font-weight: 700;
         letter-spacing: 0.2em;
+        cursor: pointer;
         &:after {
             margin-top: 10px;
             content: '';
